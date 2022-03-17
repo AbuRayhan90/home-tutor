@@ -1,0 +1,24 @@
+.happyTotur_bg {
+  background-color: #f2f2f4;
+  background-position: center;
+  background-size: cover;
+}
+
+.Tutor_say_content {
+  position: relative;
+  cursor: grab;
+}
+.Tutor_say_content::after {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  background: #f16001;
+  width: 80%;
+  height: 6px;
+  content: '';
+  transition: 0.3s;
+}
+.Tutor_say_content:hover::after {
+  left: 0;
+  width: 100%;
+}

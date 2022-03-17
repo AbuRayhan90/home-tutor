@@ -1,0 +1,14 @@
+.area_select {
+  width: 100%;
+  border-radius: 20px;
+  padding: 0px 20px;
+  height: 40px;
+}
+.area_select:focus-visible {
+  outline: none;
+}
+.from_bg {
+  background: #001b619a;
+  padding: 10px 20px;
+  border-radius: 10px;
+}

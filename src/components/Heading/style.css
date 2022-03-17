@@ -1,0 +1,21 @@
+.heading {
+  font-weight: 900;
+  color: #001b61;
+}
+
+.heading span {
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+.heading span:after {
+  font-weight: 600;
+  background-color: #00a5b8;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: 5px;
+  z-index: -1;
+}

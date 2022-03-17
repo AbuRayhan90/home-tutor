@@ -1,0 +1,41 @@
+.heroarea_bg {
+  background-image: url('../../Assets/image/banner-image-00.jpg');
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.heroarea_bg:after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  content: '';
+  background: #001b61;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.heroarea_tilte {
+  font-size: 50px;
+  font-weight: 900;
+}
+.heroarea_tilte span {
+  font-size: 50px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+.heroarea_tilte span:after {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  content: '';
+  background-color: #f16001;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+}

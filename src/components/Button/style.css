@@ -1,0 +1,42 @@
+.btnYellow,
+.menuBtn {
+  border: none;
+  padding: 12px 25px;
+  font-size: 15px;
+  border-radius: 30px;
+  color: white;
+  background-color: #001e92;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btnYellow:after,
+.menuBtn:after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-out;
+  z-index: -1;
+}
+.menuBtn:hover {
+  color: white;
+}
+.menuBtn:hover:after,
+.btnYellow:hover:after {
+  background-color: #001b61;
+  height: 100%;
+  bottom: 0;
+}
+.btnYellow {
+  background-color: #f16001;
+  width: 100%;
+}
+.btnYellow:hover:after {
+  background-color: #d85601;
+}
