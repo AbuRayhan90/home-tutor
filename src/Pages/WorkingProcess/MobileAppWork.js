@@ -22,7 +22,7 @@ const MobileAppWork = () => {
           </p>
           <ButtonBlue text="Search Tutor" clickHandler={clickHandler} />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 d-flex justify-content-end mt-5 md-mt-0">
           <img className="img-fluid" src={AppImg} alt="" />
         </div>
       </div>
