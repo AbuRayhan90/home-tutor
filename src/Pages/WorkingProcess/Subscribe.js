@@ -1,10 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ButtonBlue from "../../components/Button/ButtonBlue";
 import Heading from "../../components/Heading/Heading";
 import "./style.css";
 
 const Subscribe = () => {
+  let activeStyle = {
+    fontWeight: "700",
+    color: "#001e92",
+  };
   return (
     <div className="container pt-5">
       <div className="row d-flex align-items-center subcribe_bg px-4 py-5">
@@ -34,35 +38,60 @@ const Subscribe = () => {
         <div className="col-md-10 p-0">
           <ul className="d-flex subscribe_menu">
             <li className="nav-item">
-              <Link className="nav-link " aria-current="page" to="/">
+              <NavLink
+                className="nav-link "
+                aria-current="page"
+                to="/"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link " to="/about">
+              <NavLink
+                className="nav-link "
+                to="/about"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/courses">
+              <NavLink
+                className="nav-link"
+                to="/courses"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Courses
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blog">
+              <NavLink
+                className="nav-link"
+                to="/blog"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Blog
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <NavLink
+                className="nav-link"
+                to="/contact"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/signin">
+              <NavLink
+                className="nav-link"
+                to="/signin"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Signin
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
