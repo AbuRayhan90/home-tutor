@@ -18,8 +18,8 @@ const Subject = () => {
     navigate("/signin");
   };
   return (
-    <div className="subject_bg">
-      <div className="container text-center py-5 ">
+    <div className="subject_bg overflow-hidden">
+      <div className="container text-center py-5 mx-auto">
         <Heading
           heading1="Find"
           heading2="Online Tutors"
@@ -27,37 +27,37 @@ const Subject = () => {
           color="text-white"
         />
         <div className="row text-white mt-5 pt-5 ">
-          <div className="col-md-3">
+          <div className="col-md-3 col-6">
             <img src={Img1} alt="" />
             <h4>Data Science</h4>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-6 my-3 md-my-0">
             <img src={Img2} alt="" />
             <h4>English</h4>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-6">
             <img src={Img3} alt="" />
             <h4>Engineering</h4>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-6 my-3 md-my-0">
             <img src={Img4} alt="" />
             <h4>History</h4>
           </div>
         </div>
-        <div className="row my-4 text-white pb-5 mt-5">
-          <div className="col-md-3">
+        <div className="row my-4 text-white pb-5 md-mt-5">
+          <div className="col-md-3 col-6">
             <img src={Img5} alt="" />
             <h4>Computer Science</h4>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-6 my-3 md-my-0">
             <img src={Img6} alt="" />
             <h4>Medical</h4>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-6">
             <img src={Img7} alt="" />
             <h4>Social Science</h4>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-6 my-3 md-my-0">
             <img src={Img8} alt="" />
             <h4>Data Science</h4>
           </div>

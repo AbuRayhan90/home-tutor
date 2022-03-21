@@ -1,5 +1,5 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 const Heading = ({ heading1, heading2, heading3, color }) => {
   return (

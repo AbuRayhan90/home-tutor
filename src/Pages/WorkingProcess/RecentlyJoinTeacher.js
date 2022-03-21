@@ -13,8 +13,8 @@ const RecentlyJoinTeacher = () => {
     navigate("/signin");
   };
   return (
-    <div>
-      <div className="container py-5 text-center  px-5">
+    <>
+      <div className="container py-5 text-center  px-5 mx-auto">
         <Heading heading1="Tutors" heading2="Joined Recently" />
         <Link
           className="d-flex justify-content-end mb-3 show_more_tutor_btn"
@@ -22,8 +22,8 @@ const RecentlyJoinTeacher = () => {
         >
           Show More
         </Link>
-        <div className="row text-start">
-          <div className="col-md-4">
+        <div className="row text-start ">
+          <div className="col-md-4 mb-md-0 mb-4">
             <div className="card text-left">
               <div className="card-body">
                 <div className=" tutor_content">
@@ -63,7 +63,7 @@ const RecentlyJoinTeacher = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mb-md-0 mb-4">
             <div className="card text-left">
               <div className="card-body">
                 <div className=" tutor_content">
@@ -103,7 +103,7 @@ const RecentlyJoinTeacher = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mb-md-0 mb-4">
             <div className="card text-left">
               <div className="card-body">
                 <div className="tutor_content">
@@ -184,7 +184,7 @@ const RecentlyJoinTeacher = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

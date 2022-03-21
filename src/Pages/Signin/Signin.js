@@ -7,8 +7,8 @@ const Signin = () => {
     alert("Testing Singup");
   };
   return (
-    <div className="signInBg">
-      <div className="container">
+    <div className="signInBg overflow-hidden">
+      <div className="container mx-auto">
         <div className="row pt-5">
           <div className="col-md-4  mx-auto">
             <div className="signup-form">

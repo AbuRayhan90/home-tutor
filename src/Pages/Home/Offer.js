@@ -1,15 +1,15 @@
-import React from 'react';
-import Heading from '../../components/Heading/Heading';
-import Img_1 from '../../Assets/image/011.png';
-import Img_2 from '../../Assets/image/022.png';
-import Img_3 from '../../Assets/image/033.png';
-import Img_4 from '../../Assets/image/04.png';
-import Img_5 from '../../Assets/image/05.png';
-import Img_6 from '../../Assets/image/06.png';
+import React from "react";
+import Heading from "../../components/Heading/Heading";
+import Img_1 from "../../Assets/image/011.png";
+import Img_2 from "../../Assets/image/022.png";
+import Img_3 from "../../Assets/image/033.png";
+import Img_4 from "../../Assets/image/04.png";
+import Img_5 from "../../Assets/image/05.png";
+import Img_6 from "../../Assets/image/06.png";
 
 const Offer = () => {
   return (
-    <div className="container py-5 my-5 offer_section text-center">
+    <div className="container py-5 my-5 offer_section text-center  mx-auto">
       <Heading heading1="What" heading2="We Offer" />
       <div className="row gy-3 text-center mt-5 pt-5">
         <div className="col-md-4 mb-3 mb-3">

@@ -35,8 +35,8 @@ const About = () => {
   };
 
   return (
-    <div className="about_bg ">
-      <div className="container ">
+    <div className="about_bg overflow-hidden">
+      <div className="container mx-auto">
         <div className="row row d-flex justify-content-center">
           <div className="col-8  text-center">
             <div className="about_content">

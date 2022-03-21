@@ -10,7 +10,7 @@ const Subscribe = () => {
     color: "#001e92",
   };
   return (
-    <div className="container pt-5">
+    <div className="container pt-5 mx-auto">
       <div className="row d-flex align-items-center subcribe_bg px-4 py-5">
         <div className="col-md-4 ">
           <Heading heading1="Newsletter" />
@@ -19,7 +19,7 @@ const Subscribe = () => {
             suffering he recommend.
           </p>
         </div>
-        <div className="col-md-6 offset-2">
+        <div className="col-md-6 offset-md-2">
           <div className="input-group mb-3">
             <input
               type="text"
@@ -36,7 +36,7 @@ const Subscribe = () => {
       </div>
       <div className="row d-flex justify-content-between mt-4 ">
         <div className="col-md-10 p-0">
-          <ul className="d-flex subscribe_menu">
+          <ul className="d-flex flex-wrap subscribe_menu">
             <li className="nav-item">
               <NavLink
                 className="nav-link "
@@ -95,8 +95,8 @@ const Subscribe = () => {
             </li>
           </ul>
         </div>
-        <div className="col-md-2 p-0">
-          <ul className="d-flex  justify-content-around social_icons">
+        <div className="col-md-2 col-12 md-p-0 ">
+          <ul className="d-flex justify-content-around social_icons">
             <a
               target="_blank"
               href="https://www.facebook.com/"

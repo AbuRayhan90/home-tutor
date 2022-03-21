@@ -13,8 +13,8 @@ const WorkingProcess = () => {
     navigate("/signin");
   };
   return (
-    <div>
-      <div className="container py-5">
+    <>
+      <div className="container py-5 mx-auto">
         <div className="row d-flex justify-content-center">
           <div className="col-md-6 text-center">
             <Heading
@@ -26,7 +26,7 @@ const WorkingProcess = () => {
         </div>
 
         <div className="row mt-5 ">
-          <div className="col-md-4  text-center ">
+          <div className="col-md-4  text-center mb-md-0 mb-3">
             <div className=" p-3 shadow">
               <img className="img-fluid " src={Img_1} alt="" />
               <h3>Tell Us Where You Need Help</h3>
@@ -37,7 +37,7 @@ const WorkingProcess = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4  text-center">
+          <div className="col-md-4  text-center mb-md-0 mb-3">
             <div className="p-3 shadow">
               <img src={Img_2} alt="" />
               <h3>Choose The Tutor You Want</h3>
@@ -48,7 +48,7 @@ const WorkingProcess = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4  text-center">
+          <div className="col-md-4  text-center mb-md-0 mb-3">
             <div className="p-3 shadow">
               <img src={Img_3} alt="" />
               <h3>Book A Tutor Start Lesson</h3>
@@ -77,7 +77,7 @@ const WorkingProcess = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

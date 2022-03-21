@@ -30,7 +30,7 @@ const Heroarea = () => {
   };
   return (
     <div className="heroarea_bg  d-flex align-items-center justify-content-center">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="row ">
           <div className="col-md-6">
             <div className="text-white">
@@ -50,7 +50,7 @@ const Heroarea = () => {
                   <option value="">Madargonj</option>
                 </select>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mt-3 mt-md-0">
                 <select className="area_select" name="" id="">
                   <option value="">--Select District--</option>
                   <option value="">Jamalpur</option>
@@ -60,7 +60,7 @@ const Heroarea = () => {
               </div>
             </div>
             <div className="row my-3">
-              <div className="col-md-6">
+              <div className="col-md-6 ">
                 <select className="area_select" name="" id="">
                   <option value="">--Select Division--</option>
                   <option value="">Bogura</option>
@@ -70,7 +70,7 @@ const Heroarea = () => {
                   <option value="">Meymensingh</option>
                 </select>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mt-3 mt-md-0">
                 <select className="area_select" name="" id="">
                   <option value="">--Select City--</option>
                   <option value="">Dhaka</option>

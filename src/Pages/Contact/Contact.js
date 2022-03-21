@@ -4,8 +4,8 @@ import Heading from "../../components/Heading/Heading";
 
 const Contact = () => {
   return (
-    <div className="happyTotur_bg " style={{ height: "100vh" }}>
-      <div className="container pt-5 ">
+    <div className="happyTotur_bg overflow-hidden" style={{ height: "100vh" }}>
+      <div className="container pt-5 mx-auto">
         <div className="row text-center">
           <Heading heading1="Contact " heading2="us" />
           <p class="text-center w-responsive mx-auto mb-5">

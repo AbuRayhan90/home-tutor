@@ -10,7 +10,7 @@ const MobileAppWork = () => {
     navigate("/signin");
   };
   return (
-    <div className="container py-5 my-5">
+    <div className="container py-5 my-5 mx-auto">
       <div className="row d-flex align-items-center">
         <div className="col-md-4">
           <Heading heading1="Our" heading2="Mobile App" />

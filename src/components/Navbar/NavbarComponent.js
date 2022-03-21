@@ -13,9 +13,9 @@ const NavbarComponent = () => {
     color: "#001e92",
   };
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container">
+    <>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light overflow-hidden ">
+        <div className="container mx-auto">
           <NavLink className="navbar-brand" to="/">
             <img src={Logo} alt="" />
           </NavLink>
@@ -93,7 +93,7 @@ const NavbarComponent = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 

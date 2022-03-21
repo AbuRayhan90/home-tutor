@@ -8,8 +8,8 @@ const Resister = () => {
     alert("Testing Resister");
   };
   return (
-    <div className="signInBg">
-      <div className="container">
+    <div className="signInBg overflow-hidden">
+      <div className="container mx-auto">
         <div className="row">
           <div className="col-md-6  mx-auto">
             <div className="signup-form">

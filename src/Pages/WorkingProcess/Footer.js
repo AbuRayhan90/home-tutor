@@ -6,11 +6,11 @@ import "./style.css";
 const Footer = () => {
   return (
     <>
-      <hr />
+      <hr className="overflow-hidden" />
       <ScrollToTop smooth color="#001e92" top={300} />
-      <div className="container">
+      <div className="container mx-auto">
         <div className="row">
-          <div className="col-md-8 p-0">
+          <div className="col-md-8 md-p-0 col-12  p-md-0">
             <p>
               © Copyright All Review{" "}
               <a
@@ -23,9 +23,9 @@ const Footer = () => {
               </a>
             </p>
           </div>
-          <div className="col-md-2 p-0 offset-2">
-            <ul className="d-flex justify-content-around">
-              <li className="me-3">
+          <div className="col-md-2 col-12   md-p-0 offset-md-2">
+            <ul className="d-md-flex justify-content-around">
+              <li className="me-md-3">
                 <Link to="/about">Privacy</Link>
               </li>
               <li>
