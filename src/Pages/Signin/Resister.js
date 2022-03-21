@@ -85,7 +85,7 @@ const Resister = () => {
               </div>
               <div className="text-center">
                 <span>Already have an account? </span>
-                <Link to="/signin" className="text-danger">
+                <Link to="/signin" className="create_account fw-bold">
                   Sign in
                 </Link>
               </div>

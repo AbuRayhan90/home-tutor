@@ -35,7 +35,7 @@ const Signin = () => {
                 <ButtonYellow clickHandler={clickHandler} text="Sign in" />
               </div>
               <div className="text-center">
-                <Link to="/resister" className="text-white fw-bold fs-5">
+                <Link to="/resister" className="fw-bold fs-5 create_account">
                   Create an account
                 </Link>
               </div>
