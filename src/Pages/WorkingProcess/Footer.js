@@ -1,11 +1,13 @@
 import React from "react";
+import ScrollToTop from "react-scroll-to-top";
+
 import { Link } from "react-router-dom";
 import "./style.css";
 const Footer = () => {
   return (
     <>
       <hr />
-
+      <ScrollToTop smooth color="#001e92" top={300} />
       <div className="container">
         <div className="row">
           <div className="col-md-8 p-0">
