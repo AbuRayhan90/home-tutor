@@ -13,10 +13,10 @@
   border-radius: 10px;
 }
 .video_section {
-  position: absolute;
   bottom: 50px;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 .videoBtn {
   position: absolute;
@@ -27,6 +27,7 @@
   transition: 0.3s;
   cursor: pointer;
 }
+
 .video_section:hover .videoBtn {
   transform: scale(1.1);
 }
@@ -47,12 +48,17 @@
 }
 
 .popUp_video {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  position: relative;
+  position: fixed;
   z-index: 22;
+  left: 25%;
+  top: 25%;
 }
 .popUp_video:after {
+  position: relative;
+}
+.popUp_video::before {
   background: black;
   width: 100%;
   height: 100%;
@@ -68,4 +74,15 @@
   right: 5%;
   top: 5%;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .videoBtn {
+    left: 40%;
+  }
+  .popUp_video {
+    width: 100%;
+    left: 0;
+    top: 25%;
+    padding: 0px 20px;
+  }
 }

@@ -11,7 +11,7 @@ const VideoPlay = ({ setIsOpen }) => {
   return (
     <div className="popUp_video">
       <iframe
-        width="560"
+        width="100%"
         height="315"
         src="https://www.youtube.com/embed/n-fimuA21No"
         title="YouTube video player"
@@ -35,10 +35,10 @@ const About = () => {
   };
 
   return (
-    <div className="about_bg overflow-hidden">
+    <div className="about_bg ">
       <div className="container mx-auto">
         <div className="row row d-flex justify-content-center">
-          <div className="col-8  text-center">
+          <div className="col-md-8 col-12  text-center">
             <div className="about_content">
               {isOpen ? (
                 <VideoPlay setIsOpen={setIsOpen} />
