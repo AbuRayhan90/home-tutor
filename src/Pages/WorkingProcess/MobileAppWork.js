@@ -1,9 +1,14 @@
-import React from 'react';
-import Heading from '../../components/Heading/Heading';
-import ButtonBlue from '../../components/Button/ButtonBlue';
-import AppImg from '../../Assets/image/mobile-app.png';
+import React from "react";
+import Heading from "../../components/Heading/Heading";
+import ButtonBlue from "../../components/Button/ButtonBlue";
+import AppImg from "../../Assets/image/mobile-app.png";
+import { useNavigate } from "react-router-dom";
 
 const MobileAppWork = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/signin");
+  };
   return (
     <div className="container py-5 my-5">
       <div className="row d-flex align-items-center">
@@ -15,7 +20,7 @@ const MobileAppWork = () => {
             recommend. Commanded no of depending extremity recommend attention
             tolerably.
           </p>
-          <ButtonBlue text="Search Tutor" />
+          <ButtonBlue text="Search Tutor" clickHandler={clickHandler} />
         </div>
         <div className="col-md-8">
           <img className="img-fluid" src={AppImg} alt="" />

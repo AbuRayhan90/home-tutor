@@ -1,9 +1,14 @@
-import './style.css';
+import "./style.css";
 
-const ButtonBlue = ({ text, radius }) => {
+const ButtonBlue = ({ text, radius, clickHandler }) => {
   return (
     <>
-      <button class={`${radius} ? ${radius} menuBtn : menuBtn`}>{text}</button>
+      <button
+        onClick={clickHandler}
+        className={`${radius} ? ${radius} menuBtn : menuBtn`}
+      >
+        {text}
+      </button>
     </>
   );
 };

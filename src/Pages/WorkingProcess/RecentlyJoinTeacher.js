@@ -1,26 +1,31 @@
-import React from 'react';
-import Heading from '../../components/Heading/Heading';
-import Person1 from '../../Assets/image/user-01.jpg';
-import Person2 from '../../Assets/image/user-05.png';
-import Person3 from '../../Assets/image/user-06.png';
-import ButtonYellow from './../../components/Button/ButtonYellow';
-import Img1 from '../../Assets/image/01 (1).png';
+import React from "react";
+import Heading from "../../components/Heading/Heading";
+import Person1 from "../../Assets/image/user-01.jpg";
+import Person2 from "../../Assets/image/user-05.png";
+import Person3 from "../../Assets/image/user-06.png";
+import ButtonYellow from "./../../components/Button/ButtonYellow";
+import Img1 from "../../Assets/image/01 (1).png";
+import { Link, useNavigate } from "react-router-dom";
 
 const RecentlyJoinTeacher = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/signin");
+  };
   return (
     <div>
-      <div class="container py-5 text-center  px-5">
+      <div className="container py-5 text-center  px-5">
         <Heading heading1="Tutors" heading2="Joined Recently" />
-        <a
+        <Link
           className="d-flex justify-content-end mb-3 show_more_tutor_btn"
-          href=""
+          to="signin"
         >
           Show More
-        </a>
+        </Link>
         <div className="row text-start">
           <div className="col-md-4">
-            <div class="card text-left">
-              <div class="card-body">
+            <div className="card text-left">
+              <div className="card-body">
                 <div className=" tutor_content">
                   <img src={Person1} alt="" />
                   <div className="row ">
@@ -50,14 +55,17 @@ const RecentlyJoinTeacher = () => {
                     </div>
                   </div>
                   <hr />
-                  <ButtonYellow text="Send Message" />
+                  <ButtonYellow
+                    text="Send Message"
+                    clickHandler={clickHandler}
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <div class="card text-left">
-              <div class="card-body">
+            <div className="card text-left">
+              <div className="card-body">
                 <div className=" tutor_content">
                   <img src={Person2} alt="" />
                   <div className="row ">
@@ -87,14 +95,17 @@ const RecentlyJoinTeacher = () => {
                     </div>
                   </div>
                   <hr />
-                  <ButtonYellow text="Send Message" />
+                  <ButtonYellow
+                    text="Send Message"
+                    clickHandler={clickHandler}
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <div class="card text-left">
-              <div class="card-body">
+            <div className="card text-left">
+              <div className="card-body">
                 <div className="tutor_content">
                   <img src={Person3} alt="" />
                   <div className="row ">
@@ -125,7 +136,7 @@ const RecentlyJoinTeacher = () => {
                   </div>
                 </div>
                 <hr />
-                <ButtonYellow text="Send Message" />
+                <ButtonYellow text="Send Message" clickHandle={clickHandler} />
               </div>
             </div>
           </div>
@@ -133,11 +144,11 @@ const RecentlyJoinTeacher = () => {
         <div className="row text center mt-5 py-5">
           <Heading heading1="How It Works" heading2="For Tutors ?" />
           <div className="col-md-4 pt-5 ">
-            <div class="card shadow py-4 tutor_work_bg1">
-              <div class="card-body">
+            <div className="card shadow py-4 tutor_work_bg1">
+              <div className="card-body">
                 <img className="img-fluid mb-3" src={Img1} alt="" />
-                <h3 class="card-title">Create A Free Account Now</h3>
-                <p class="card-text">
+                <h3 className="card-title">Create A Free Account Now</h3>
+                <p className="card-text">
                   Advantage old hTad otherwise sincerity dependent additions.
                   Six draw you him full not mean evil. Prepare garrets it
                   expense.
@@ -146,11 +157,11 @@ const RecentlyJoinTeacher = () => {
             </div>
           </div>
           <div className="col-md-4 pt-5 ">
-            <div class="card shadow py-4 tutor_work_bg2">
-              <div class="card-body">
+            <div className="card shadow py-4 tutor_work_bg2">
+              <div className="card-body">
                 <img className="img-fluid mb-3" src={Img1} alt="" />
-                <h3 class="card-title">Create A Free Account Now</h3>
-                <p class="card-text">
+                <h3 className="card-title">Create A Free Account Now</h3>
+                <p className="card-text">
                   Advantage old hTad otherwise sincerity dependent additions.
                   Six draw you him full not mean evil. Prepare garrets it
                   expense.
@@ -159,11 +170,11 @@ const RecentlyJoinTeacher = () => {
             </div>
           </div>
           <div className="col-md-4 pt-5 ">
-            <div class="card shadow py-4 tutor_work_bg3">
-              <div class="card-body">
+            <div className="card shadow py-4 tutor_work_bg3">
+              <div className="card-body">
                 <img className="img-fluid mb-3" src={Img1} alt="" />
-                <h3 class="card-title">Create A Free Account Now</h3>
-                <p class="card-text">
+                <h3 className="card-title">Create A Free Account Now</h3>
+                <p className="card-text">
                   Advantage old hTad otherwise sincerity dependent additions.
                   Six draw you him full not mean evil. Prepare garrets it
                   expense.

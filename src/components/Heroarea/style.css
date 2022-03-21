@@ -1,5 +1,5 @@
 .heroarea_bg {
-  background-image: url('../../Assets/image/banner-image-00.jpg');
+  background-image: url("../../Assets/image/banner-image-00.jpg");
   height: 90vh;
   background-position: center;
   background-size: cover;
@@ -13,7 +13,7 @@
   width: 100%;
   left: 0;
   top: 0;
-  content: '';
+  content: "";
   background: #001b61;
   opacity: 0.6;
   z-index: -1;
@@ -33,9 +33,24 @@
   position: absolute;
   left: 0;
   bottom: 8px;
-  content: '';
+  content: "";
   background-color: #f16001;
   width: 100%;
   height: 8px;
   z-index: -1;
+}
+
+.area_select {
+  width: 100%;
+  border-radius: 20px;
+  padding: 0px 20px;
+  height: 40px;
+}
+.area_select:focus-visible {
+  outline: none;
+}
+.from_bg {
+  background: #001b619a;
+  padding: 10px 20px;
+  border-radius: 10px;
 }

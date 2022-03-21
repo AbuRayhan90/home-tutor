@@ -5,12 +5,17 @@ import Img_2 from "../../Assets/image/02.png";
 import Img_3 from "../../Assets/image/03.png";
 import FreeClsImg from "../../Assets/image/free-class.png";
 import ButtonBlue from "./../../components/Button/ButtonBlue";
+import { useNavigate } from "react-router-dom";
 
 const WorkingProcess = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/signin");
+  };
   return (
     <div>
       <div className="container py-5">
-        <div class="row d-flex justify-content-center">
+        <div className="row d-flex justify-content-center">
           <div className="col-md-6 text-center">
             <Heading
               heading1="How"
@@ -68,7 +73,7 @@ const WorkingProcess = () => {
               he recommend. Commanded no of depending extremity recommend
               attention tolerably.
             </p>
-            <ButtonBlue text="Search Tutor" />
+            <ButtonBlue text="Search Tutor" clickHandler={clickHandler} />
           </div>
         </div>
       </div>

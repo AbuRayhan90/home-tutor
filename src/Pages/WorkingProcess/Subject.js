@@ -1,17 +1,22 @@
-import React from 'react';
-import Heading from '../../components/Heading/Heading';
-import Img1 from '../../Assets/image/07.png';
-import Img2 from '../../Assets/image/08.png';
-import Img3 from '../../Assets/image/06 (1).png';
-import Img4 from '../../Assets/image/01 (3).png';
-import Img5 from '../../Assets/image/04 (1).png';
-import Img6 from '../../Assets/image/06 (1).png';
-import Img7 from '../../Assets/image/04 (1).png';
-import Img8 from '../../Assets/image/07.png';
-import './style.css';
-import ButtonYellow from './../../components/Button/ButtonYellow';
+import React from "react";
+import Heading from "../../components/Heading/Heading";
+import Img1 from "../../Assets/image/07.png";
+import Img2 from "../../Assets/image/08.png";
+import Img3 from "../../Assets/image/06 (1).png";
+import Img4 from "../../Assets/image/01 (3).png";
+import Img5 from "../../Assets/image/04 (1).png";
+import Img6 from "../../Assets/image/06 (1).png";
+import Img7 from "../../Assets/image/04 (1).png";
+import Img8 from "../../Assets/image/07.png";
+import "./style.css";
+import ButtonYellow from "./../../components/Button/ButtonYellow";
+import { useNavigate } from "react-router-dom";
 
 const Subject = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/signin");
+  };
   return (
     <div className="subject_bg">
       <div className="container text-center py-5 ">
@@ -57,9 +62,9 @@ const Subject = () => {
             <h4>Data Science</h4>
           </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div className="row d-flex justify-content-center">
           <div className="col-md-2">
-            <ButtonYellow text="See all Subject" />
+            <ButtonYellow text="See all Subject" clickHandler={clickHandler} />
           </div>
         </div>
       </div>

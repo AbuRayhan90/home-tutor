@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import Heading from './../../components/Heading/Heading';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Tutor1 from '../../Assets/image/user-01.jpg';
-import './style.css';
+import React from "react";
+import Heading from "../../components/Heading/Heading";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Tutor1 from "../../Assets/image/user-01.jpg";
+import "./style.css";
 
-const HappyTotur = () => {
+const HappyTutor = () => {
   const settings = {
-    className: 'center',
+    className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: '60px',
+    centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
     dots: true,
@@ -101,4 +101,4 @@ const HappyTotur = () => {
   );
 };
 
-export default HappyTotur;
+export default HappyTutor;

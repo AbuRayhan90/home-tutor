@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const ButtonYellow = ({ text }) => {
+const ButtonYellow = ({ text, clickHandler }) => {
   return (
     <>
-      <button class="btnYellow">{text}</button>
+      <button onClick={clickHandler} className="btnYellow">
+        {text}
+      </button>
     </>
   );
 };
